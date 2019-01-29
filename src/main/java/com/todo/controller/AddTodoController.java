@@ -15,37 +15,32 @@ import javax.persistence.*;
 public class AddTodoController {
 
 	@RequestMapping(value = "/add")
-	public ModelAndView execute(@RequestParam("input_todo") String todo) {
+	public String execute(@RequestParam("input_todo") String todo) {
 		Todo t= new Todo();
 		t.setDescricao(todo);
 		TodoBean tb = new TodoBean();
 		tb.setTodo(t);
 		tb.salvar();
-		RedirectView redirectView = new RedirectView("/todo/");
-	    redirectView.setExposePathVariables(false);
-	    return new ModelAndView(redirectView);	
+		return "template";
+			
 	}
 	@RequestMapping(value = "/add-1")
-	public ModelAndView execute1(@RequestParam("input_todo") String todo) {
+	public String execute1(@RequestParam("input_todo") String todo) {
 		Todo t= new Todo();
 		t.setDescricao(todo);
 		TodoBean tb = new TodoBean();
 		tb.setTodo(t);
 		tb.salvar();
-		RedirectView redirectView = new RedirectView("/todo/finalizados");
-	    redirectView.setExposePathVariables(false);
-	    return new ModelAndView(redirectView);	
+		return  "template_finalizados";
 	}
 	@RequestMapping(value = "/add-2")
-	public ModelAndView execute2(@RequestParam("input_todo") String todo) {
+	public String execute2(@RequestParam("input_todo") String todo) {
 		Todo t= new Todo();
 		t.setDescricao(todo);
 		TodoBean tb = new TodoBean();
 		tb.setTodo(t);
 		tb.salvar();
-		RedirectView redirectView = new RedirectView("/todo/andamento");
-	    redirectView.setExposePathVariables(false);
-	    return new ModelAndView(redirectView);	
+		return "template_andamento";
 	}
 	@RequestMapping(value = "/finalizados")
 	public String execute_end() {
@@ -57,12 +52,11 @@ public class AddTodoController {
 	    return "template_andamento";	
 	}
 	@RequestMapping(value = "/delete")
-	public ModelAndView execute_delete() {
+	public String execute_delete() {
 		TodoBean tb = new TodoBean();
 		tb.deletarStatusConcluido();
-		RedirectView redirectView = new RedirectView("/todo/");
-	    redirectView.setExposePathVariables(false);
-	    return new ModelAndView(redirectView);	
+		return "template";
+			
 	}
 	
 	
