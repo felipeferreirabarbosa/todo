@@ -5,9 +5,9 @@ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org
 	<provider>org.hibernate.ejb.HibernatePersistence</provider>
 	<class>com.todo.entidades.Todo</class>
 	<properties>
-	<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ec2-23-23-184-76.compute-1.amazonaws.com:5432/d47ad5d2otktl8"/>
-	<property name="javax.persistence.jdbc.user" value="zqlgxkslugmcov"/>
-	<property name="javax.persistence.jdbc.password" value="    5f25e3a4e898e04a2448c3113aff072b6f1012485e81a5115ff78294acdecbd5"/>
+	<property name="javax.persistence.jdbc.url" value=""/>
+	<property name="javax.persistence.jdbc.user" value=""/>
+	<property name="javax.persistence.jdbc.password" value=""/>
 	<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
 	<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
 	<property name="hibernate.show_sql" value="true"/>
