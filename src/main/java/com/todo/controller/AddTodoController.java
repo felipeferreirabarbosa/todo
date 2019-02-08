@@ -15,7 +15,7 @@ import javax.persistence.*;
 public class AddTodoController {
 
 	@RequestMapping(value = "/add")
-	public String execute(@RequestParam("input_todo") String todo) {
+	public String addTodoFiltroTudo(@RequestParam("input_todo") String todo) {
 		Todo t= new Todo();
 		t.setDescricao(todo);
 		TodoBean tb = new TodoBean();
@@ -25,7 +25,7 @@ public class AddTodoController {
 			
 	}
 	@RequestMapping(value = "/add-1")
-	public String execute1(@RequestParam("input_todo") String todo) {
+	public String addTodoFiltroFinalizado(@RequestParam("input_todo") String todo) {
 		Todo t= new Todo();
 		t.setDescricao(todo);
 		TodoBean tb = new TodoBean();
@@ -34,7 +34,7 @@ public class AddTodoController {
 		return  "template_finalizados";
 	}
 	@RequestMapping(value = "/add-2")
-	public String execute2(@RequestParam("input_todo") String todo) {
+	public String addTodoFiltroAndamento(@RequestParam("input_todo") String todo) {
 		Todo t= new Todo();
 		t.setDescricao(todo);
 		TodoBean tb = new TodoBean();
@@ -43,16 +43,16 @@ public class AddTodoController {
 		return "template_andamento";
 	}
 	@RequestMapping(value = "/finalizados")
-	public String execute_end() {
+	public String exibirFinalizados() {
 	    return "template_finalizados";	
 	}
 	
 	@RequestMapping(value = "/andamento")
-	public String execute_active() {
+	public String exibirAndamento() {
 	    return "template_andamento";	
 	}
 	@RequestMapping(value = "/delete")
-	public String execute_delete() {
+	public String deletarTodoFinalizados() {
 		TodoBean tb = new TodoBean();
 		tb.deletarStatusConcluido();
 		return "template";
