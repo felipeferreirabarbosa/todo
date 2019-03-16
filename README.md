@@ -1,7 +1,6 @@
-## Desafio ESIG - ToDo
+## Site ToDo - Lista de Tarefas
 
-Aplicativo desenvolvido para a segunda etapado processo seletivo da ESIG, consiste em um ToDo, ou seja, uma lista de tarefas. 
-Criado utilizando JSF, o projeto consiste em gravar tarefas em um banco de dados utilizando persistência (JPA). Estas tarefas, por sua vez, serão exibidas em uma lista, e seu status pode ser alterado pelos botões Finalizar (caso a tarefa estaja ativa e tenha terminado) e Iniciar (caso a tarefa tenha sido finalizada e precise ser iniciada novamente). É possível alternar entre três tipos de tabela: A tabela principal (Todo) que exibe todas as tarefas do banco de dados, a tebela "Finalizado" que exibe todas as tarefas concluidas e a tabela "Em andamento" que mostra as tarefas ativas. Essa transição entre tabelas fica por conta do controlador criado utilizando Spring MVC. 
+O aplicativo consiste em um ToDo, ou seja, uma lista de tarefas, gravando-as em um banco de dados utilizando persistência (JPA). Estas tarefas, por sua vez, serão exibidas em uma lista, e seu status pode ser alterado pelos botões Finalizar (caso a tarefa estaja ativa e tenha terminado) e Iniciar (caso a tarefa tenha sido finalizada e precise ser iniciada novamente). É possível alternar entre três tipos de tabela: A tabela principal (Todo) que exibe todas as tarefas do banco de dados, a tebela "Finalizado" que exibe todas as tarefas concluidas e a tabela "Em andamento" que mostra as tarefas ativas. Essa transição entre tabelas fica por conta do controlador criado utilizando Spring MVC. 
 Além disso, o botão "Apagar Finalizados" permite que o usuário apague do banco de dados todas as tarefas finalizadas.
 
 ### Itens implementados
@@ -14,17 +13,17 @@ B. Utilizar persistência em um banco de dados (qualquer banco desejado)
 
 C. Utilizar Hibernate e JPA
 
-E. Utilizar Spring MVC
+D. Utilizar Spring MVC
 
-F. Utilizar Bootstrap 4
+E. Utilizar Bootstrap 4
 
-G. Utilizar Primefaces
+F. Utilizar Primefaces
 
-H. Utilizar testes de unidades
+G. Utilizar testes de unidades
 
-I. Criar single page app utilizando react (que pode ser vista em [ffb_todo](https://github.com/felipeferreirabarbosa/ffb_todo_spa))
+H. Criar single page app utilizando react (que pode ser vista em [ffb_todo](https://github.com/felipeferreirabarbosa/ffb_todo_spa))
 
-J. Publicar projeto no heroku ([http://ffbtodo.herokuapp.com/](http://ffbtodo.herokuapp.com/))
+I. Publicar projeto no heroku ([http://ffbtodo.herokuapp.com/](http://ffbtodo.herokuapp.com/))
 
 ### Instruções para execução em um ambiente local
 
